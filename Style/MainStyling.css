@@ -1,0 +1,211 @@
+body{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background-color: white;
+}
+
+.banner{
+	background-color: #A0AAC9;
+	height: 250px;	
+	border-bottom: 1px solid #495A8B;
+}
+
+.banner img{
+	height: 250px;
+}
+
+.nav{
+	background-color: #EFF1F7;
+	height: 65px;
+	border-bottom: 1px solid #717FA8;
+	overflow: hidden;
+}
+
+.nav a {
+	float: left;
+	display: block;
+	color: #495a8b;
+	font-size: 28px;
+	text-align: center;
+	padding: 17px;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.nav a:hover{
+	color: #ccd2e4;
+	background-color: #495a8b;
+}
+
+.stay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.stay + .content {
+  padding-top: 60px;
+}
+
+.content{
+	height: fit-content;
+	padding: 16px;
+}
+
+.content p{
+	color: black;
+	font-size: 28px;
+	font-weight: bold;
+	overflow-wrap: normal;
+}
+
+@font-face {
+	font-family: 'Richards Dev Logo';
+	src: url('../Resources/Fonts/CinzelDecorative-Bold.ttf') format('truetype'),
+		 url('../Resources/Fonts/CinzelDecorative-Bold.woff') format('woff');
+}
+
+#menu_button{
+	display: none;
+}
+
+.banner_small {
+	background-color: #A0AAC9;
+	color: #eff1f7;
+	font-family: 'Richards Dev Logo', serif;
+	height: 65px;
+	font-size: 35px;
+    text-align: center;
+}
+
+.banner_small p {
+	margin: auto;
+	padding: 10px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width:1505px){
+	.banner_small {
+		display: none;
+	}
+	
+	#menu_button{
+		display: none;
+	}
+	
+	.medium_screen {
+		display: none;
+	}	
+	
+	.full_screen {
+		display: block;
+	}
+}
+
+@media only screen and (min-width:892px) and (max-width:1504px){
+
+	.banner_small {
+		display: none;
+	}
+	
+	#menu_button{
+		display: none;
+	}
+	
+	.full_screen {
+		display: none;
+	}
+	.medium_screen {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 550px) and (max-width:891px){
+
+	.banner {
+		display: none;
+	}
+	
+	#menu_button{
+		display: none;
+	}
+	
+	.medium_screen {
+		display: none;
+	}
+
+	.full_screen {
+		display: none;
+	}
+
+	.banner_small {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 450px) and (max-width: 549px){
+
+	.banner {
+		display: none;
+	}
+	
+	.nav {
+		display: none;
+	}
+	
+	.medium_screen {
+		display: none;
+	}
+
+	.full_screen {
+		display: none;
+	}
+	
+	.banner_small {
+		text-align: left;
+		font-size: 25px;
+	}
+	
+	.banner_small p {
+		padding:16px;
+		display: inline-block;
+	}
+	
+	#menu_button{
+		display: block;
+		float: right;
+		padding: 10px;
+		opacity: 0.7;
+	}
+}
+
+@media only screen and (max-width: 449px){
+	
+	.banner {
+		display: none;
+	}
+	
+	.nav {
+		display: none;
+	}
+	
+	.medium_screen {
+		display: none;
+	}
+
+	.full_screen {
+		display: none;
+	}
+	
+	.banner_small p {
+		display: none;
+	}
+	
+	#menu_button{
+		display: block;
+		float: right;
+		padding: 10px;
+		opacity: 0.7;
+	}
+}
